@@ -1,27 +1,13 @@
-<?php
-/**
-* @author evilnapsis
-**/
-
-define("ROOT", dirname(__FILE__));
-
-$debug= false;
-if($debug){
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-}
-
-include "core/autoload.php";
-
-ob_start();
-session_start();
-Core::$root="";
-
-// si quieres que se muestre las consultas SQL debes decomentar la siguiente linea
-// Core::$debug_sql = true;
-
-$lb = new Lb();
-$lb->start();
-
-?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaBuFa</title>
+</head>
+<body>
+    <h1 style="font-size: 5em;">Bienvenido a La Bu Fa 2</h1>
+	<h2>Introduccion:</h2>
+</body>
+</html>
